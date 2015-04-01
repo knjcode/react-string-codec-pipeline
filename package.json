@@ -1,0 +1,28 @@
+{
+  "name": "react-string-codec-pipeline",
+  "version": "0.0.0",
+  "description": "string codec pipeline",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "jsxhint --harmony --es6module app.jsx",
+    "build": "browserify app.jsx -t babelify | uglifyjs -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knjcode/react-string-codec-pipeline"
+  },
+  "author": "knjcode <knjcode@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knjcode/react-string-codec-pipeline/issues"
+  },
+  "homepage": "https://github.com/knjcode/react-string-codec-pipeline",
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.4",
+    "jsxhint": "^0.14.0",
+    "react": "^0.13.1",
+    "string-codec": "0.0.6",
+    "uglify-js": "^2.4.19"
+  }
+}
