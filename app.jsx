@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {encoder, decoder, ENC_ALGOS, DEC_ALGOS} from 'string-codec';
-ENC_ALGOS = ENC_ALGOS.concat(['md5','rmd160','sha1','sha224','sha256','sha384','sha512']);
+const ENC = ENC_ALGOS.concat(['md5','rmd160','sha1','sha224','sha256','sha384','sha512']);
 
 var Algo = React.createClass({
   _onDelete() {
@@ -89,7 +89,7 @@ var AlgoList = React.createClass({
         <div>
           <div>
             <div style={style.head}>encode item</div>
-              {ENC_ALGOS.map( algo => {
+              {ENC.map( algo => {
                 return (
                   <button
                     style={style.item}
