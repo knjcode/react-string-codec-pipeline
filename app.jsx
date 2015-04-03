@@ -38,7 +38,7 @@ var AlgoList = React.createClass({
     });
   },
 
-  deleteAlgo(id) {
+  onDelete(id) {
     this.setState({
       algos: this.state.algos.filter( algo => {
         return algo.id !== id;
@@ -68,7 +68,7 @@ var AlgoList = React.createClass({
 
       return (
         <li key={algo.id}>
-          <Algo algo={algo} result={value} onDelete={this.deleteAlgo} />
+          <Algo algo={algo} result={value} onDelete={this.onDelete} />
         </li>
       );
     });
