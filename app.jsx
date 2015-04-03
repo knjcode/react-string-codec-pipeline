@@ -92,6 +92,7 @@ var AlgoList = React.createClass({
               {ENC.map( algo => {
                 return (
                   <button
+                    key={algo}
                     style={style.item}
                     onClick={this.addAlgo.bind(null,algo,'encode')}>
                     {algo}
@@ -104,6 +105,7 @@ var AlgoList = React.createClass({
               {DEC_ALGOS.map ( algo => {
                 return (
                   <button
+                    key={algo}
                     style={style.item}
                     onClick={this.addAlgo.bind(null,algo,'decode')}>
                     {algo}
