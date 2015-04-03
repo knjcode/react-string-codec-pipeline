@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/knjcode/react-string-codec-pipeline",
   "devDependencies": {
-    "babelify": "^5.0.4",
-    "browserify": "^9.0.4",
+    "babelify": "^6.0.1",
+    "browserify": "^9.0.6",
     "jsxhint": "^0.14.0",
     "react": "^0.13.1",
     "string-codec": "0.0.6",
